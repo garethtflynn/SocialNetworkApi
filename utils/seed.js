@@ -26,7 +26,7 @@ connection.once("open", async () => {
 
   await User.collection.insertMany(user);
   console.table(user);
-  console.log("USER SEEDED");
+  console.log("USERS SEEDED");
 
   // seeding thoughts 
   const thought = [];

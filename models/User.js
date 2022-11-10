@@ -1,3 +1,4 @@
+const { type } = require('express/lib/response');
 const { Schema, model } = require('mongoose')
 const thoughtSchema = require('./Thought')
 
@@ -20,13 +21,13 @@ const userSchema = new Schema(
         thoughts: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'Thought'  
+                ref: 'thoughts'  
             }
         ],
         friends: [
             {
              type: Schema.Types.ObjectId,
-             ref: 'User'   
+             ref: 'user'   
             }
         ]
     },
@@ -45,5 +46,5 @@ userSchema
     return this.freinds.length
 })
 
-const User = model('User', userSchema)
+const User = model('user', userSchema)
 module.exports = User;
