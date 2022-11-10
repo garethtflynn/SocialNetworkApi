@@ -28,10 +28,11 @@ connection.once("open", async () => {
   console.table(user);
   console.log("USER SEEDED");
 
+  // seeding thoughts 
   const thought = [];
 
   function thoughtData() {
-    for (var i = 0; i < thought.length; i++) {
+    for (var i = 0; i < thoughts.length; i++) {
       const thoughtObj = {
         username: username[i],
         thought: thoughts[i],
