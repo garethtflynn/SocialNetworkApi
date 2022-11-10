@@ -4,6 +4,8 @@ const { username, email, thoughts } = require("./data");
 
 connection.on("error", (err) => err);
 connection.once("open", async () => {
+  console.log('CONNECTED')
+
   await User.deleteMany({});
   await Thought.deleteMany({});
 
