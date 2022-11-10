@@ -9,6 +9,7 @@ connection.once("open", async () => {
   await User.deleteMany({});
   await Thought.deleteMany({});
 
+  // seeding users
   const user = [];
 
   function userData() {
