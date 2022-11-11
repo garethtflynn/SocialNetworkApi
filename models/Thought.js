@@ -27,10 +27,6 @@ const reactionSchema = new Schema(
 
 const thoughtSchema = new Schema(
     {
-        thoughtId: {
-            type: Schema.Types.ObjectId,
-            default: () => new Types.ObjectId()
-        },
         thoughtText: {
             type: String,
             required: true, 
@@ -62,5 +58,5 @@ thoughtSchema
     return this.reactions.length
 })
 
-const Thought = model('thought', thoughtSchema)
+const Thought = model('Thought', thoughtSchema)
 module.exports = Thought

@@ -14,12 +14,12 @@ const {
 router.route('/').get(getThoughts).post(createThought)
 
 // get a single thought, update a thought, and delete a thought
-router.route('/thoughtId').get(getSingleThought).put(updateThought).delete(deleteThought);
+router.route('/:thoughtsId').get(getSingleThought).put(updateThought).delete(deleteThought);
 
 // create a reaction
-router.route('/thoughtId/reaction').post(createReaction)
+router.route('/:thoughtsId/reaction').post(createReaction)
 
 // delete a reaction
-router.route('/thoughtId/reaction/reactionId').delete(deleteReaction)
+router.route('/:thoughtsId/reaction/:reactionId').delete(deleteReaction)
 
 module.exports = router; 

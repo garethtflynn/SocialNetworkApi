@@ -23,7 +23,7 @@ In order to usilize the backend technology, the user must first install the Node
 
 ## Screenshots/Visuals
 
-![App Screenshot]()
+![App Screenshot](./asstes/socialApi.png)
 
 ## Technology
 
@@ -56,4 +56,4 @@ If you have any questions please email me at gareth.t.flynn@gmail.com
 ## Links  
 
 * [Repository](https://github.com/garethtflynn/SocialNetworkApi)
-* [Video](https://drive.google.com/file/d/1Oub36y3PzQeez2qpjBDS6pH5-SPm-xYB/view)
+* [Video]()

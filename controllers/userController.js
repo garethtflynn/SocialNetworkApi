@@ -1,3 +1,4 @@
+const { ObjectId } = require('mongoose').Types;
 const { User, Thought } = require("../models");
 
 const friendsList = async () =>
@@ -25,7 +26,7 @@ module.exports = {
   getSingleUser(req, res) {
     User.findOne({ _id: req.params.userId })
       .populate("thoughts")
-      .populate("freinds")
+      .populate("friends")
       .select("-__v")
       .then(async (user) =>
         !user
@@ -84,7 +85,7 @@ module.exports = {
   newFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $addToSet: { friends: req.params.friendId } },
+      { $addToSet: { friends: req.params.friendsId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
@@ -98,7 +99,7 @@ module.exports = {
   removeFriend(req, res) {
     User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $pull: { friends: req.params.friendId } },
+      { $pull: { friends: req.params.friendsId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
