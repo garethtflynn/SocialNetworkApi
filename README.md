@@ -19,7 +19,7 @@ The purpose of this application is to show an API for a social network platform 
 
 ## Installation 
 
-In order to usilize the backend technology, the user must first install the Node Package Manager (npm), the express package, MongoDB, Mongoose, and Moment.
+In order to usilize the backend technology, the user must first install the Node Package Manager (npm), the express package, MongoDB, and Mongoose.
 
 ## Screenshots/Visuals
 
