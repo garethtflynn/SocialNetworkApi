@@ -27,7 +27,7 @@ In order to usilize the backend technology, the user must first install the Node
 
 ## Technology
 
-The technologies used for this application were: JavaScript, Node, Express, MongoDB, Mongoose, and Moment.
+The technologies used for this application were: JavaScript, Node, Express, MongoDB, and Mongoose.
 
 ## Usage
 
